@@ -19,7 +19,7 @@ import javax.security.auth.callback.Callback;
 public class MyAdapter extends BaseAdapter{
 
     private Context mContext;
-    private MyClickListener listener;
+    private MyClickListener mylistener;
     private String[] mData;
 
     public MyAdapter(Context mContext, String[] mData) {
@@ -28,7 +28,7 @@ public class MyAdapter extends BaseAdapter{
     }
 
     public void setListener(MyClickListener listener) {
-        this.listener = listener;
+        this.mylistener = listener;
     }
 
     @Override
@@ -59,8 +59,8 @@ public class MyAdapter extends BaseAdapter{
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (listener!=null){
-                    listener.onclick(index);
+                if (mylistener!=null){
+                    mylistener.onclick(index);
                 }
             }
         });

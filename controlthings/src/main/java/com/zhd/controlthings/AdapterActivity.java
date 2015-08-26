@@ -17,9 +17,9 @@ import android.widget.Toast;
  */
 public class AdapterActivity extends Activity {
 
-    private final int i=3;
+    private final int i=3;//需要添加的内容
     private ListView lv;
-    String[] names = new String[20];
+    String[] names = new String[20];//数据
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +33,7 @@ public class AdapterActivity extends Activity {
             else
                 names[i] = "小红" + i;
         }
-        MyAdapter adapter=new MyAdapter(this,names);
+        MyAdapter adapter=new MyAdapter(this,names);//得到adapter对象，里面有填充的方法
         adapter.setListener(new MyClickListener() {
             @Override
             public void onclick(int position) {
