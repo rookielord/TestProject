@@ -10,20 +10,29 @@
     android:orientation="vertical">
 
     <Button
+        android:id="@+id/btn_normal1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="普通通知"/>
+        android:text="普通通知1"/>
     <Button
+        android:id="@+id/btn_normal2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="普通通知"/>
+        android:text="普通通知2"/>
     <Button
+        android:id="@+id/custom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="普通通知"/>
+        android:text="自定义通知"/>
     <Button
+        android:id="@+id/clear"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="普通通知"/>
+        android:text="清除通知"/>
+    <Button
+        android:id="@+id/adapter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="baseadapter"/>
 
 </LinearLayout>
