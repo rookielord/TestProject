@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">QQlayout</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="refuse"><a href="http://www.baidu.com">无法登陆?</a></string>
+    <string name="register"><a href="http://www.qq.com">新用户</a></string>
+    <string name="user">QQ号/手机号/邮箱</string>
+    <string name="password">密码</string>
+    <string name="login">登录</string>
+</resources>
