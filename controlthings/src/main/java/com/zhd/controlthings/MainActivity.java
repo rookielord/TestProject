@@ -15,7 +15,7 @@ import android.widget.RemoteViews;
 
 public class MainActivity extends ActionBarActivity implements View.OnClickListener{
 
-    Button btn_normal1,btn_normal2,btn_custom,btn_clear;
+    Button btn_normal1,btn_normal2,btn_custom,btn_clear,btn_adapter;
     private static final int NOTIFICATION_FLAG=1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,12 +25,13 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         btn_normal2= (Button) findViewById(R.id.btn_normal2);
         btn_custom= (Button) findViewById(R.id.custom);
         btn_clear= (Button) findViewById(R.id.clear);
+        btn_adapter= (Button) findViewById(R.id.adapter);
         //监听控件
         btn_normal1.setOnClickListener(this);
         btn_normal2.setOnClickListener(this);
         btn_custom.setOnClickListener(this);
         btn_clear.setOnClickListener(this);
-
+        btn_adapter.setOnClickListener(this);
     }
 
     @Override
