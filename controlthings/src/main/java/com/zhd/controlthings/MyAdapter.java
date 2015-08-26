@@ -8,6 +8,9 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.security.PublicKey;
+import java.util.jar.Attributes;
+
 import javax.security.auth.callback.Callback;
 
 /**
@@ -16,14 +19,21 @@ import javax.security.auth.callback.Callback;
 public class MyAdapter extends BaseAdapter{
 
     private Context mContext;
+    private MyClickListener listener;
+    private String[] mData;
 
-    public MyAdapter(Context mContext) {
+    public MyAdapter(Context mContext, String[] mData) {
         this.mContext = mContext;
+        this.mData = mData;
+    }
+
+    public void setListener(MyClickListener listener) {
+        this.listener = listener;
     }
 
     @Override
     public int getCount() {
-        return 0;
+        return mData.length;
     }
 
     @Override
@@ -37,17 +47,21 @@ public class MyAdapter extends BaseAdapter{
     }
 
     @Override
-    public View getView(final int position, View convertView, ViewGroup parent) {
+    public View getView(int position, View convertView, ViewGroup parent) {
+        final int index=position;
         View v = View.inflate(mContext, R.layout.mylistitem, null);//得到布局文件的对象
         //找到其视图上的控件
         Button btn = (Button) v.findViewById(R.id.btn_show_position);
         //ImageView img= (ImageView) v.findViewById(R.id.img);
         TextView tv = (TextView) v.findViewById(R.id.tv_name);
+        tv.setText(mData[position]);
         //对其添加事件和内容
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(mContext, "当前item的位置是" + position, Toast.LENGTH_SHORT).show();
+                if (listener!=null){
+                    listener.onclick(index);
+                }
             }
         });
         return v;
