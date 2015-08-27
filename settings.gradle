@@ -1,1 +1,1 @@
-include ':app', ':qqlayout', ':threadinstance', ':waitnotify', ':controlthings', ':reflector'
+include ':app', ':qqlayout', ':threadinstance', ':waitnotify', ':controlthings', ':reflector', ':mylist'

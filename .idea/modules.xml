@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/TestProject.iml" filepath="$PROJECT_DIR$/TestProject.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/controlthings/controlthings.iml" filepath="$PROJECT_DIR$/controlthings/controlthings.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mylist/mylist.iml" filepath="$PROJECT_DIR$/mylist/mylist.iml" />
       <module fileurl="file://$PROJECT_DIR$/qqlayout/qqlayout.iml" filepath="$PROJECT_DIR$/qqlayout/qqlayout.iml" />
       <module fileurl="file://$PROJECT_DIR$/reflector/reflector.iml" filepath="$PROJECT_DIR$/reflector/reflector.iml" />
       <module fileurl="file://$PROJECT_DIR$/threadinstance/threadinstance.iml" filepath="$PROJECT_DIR$/threadinstance/threadinstance.iml" />
