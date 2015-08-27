@@ -59,7 +59,7 @@ public class MyAdapter extends BaseAdapter{
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (mylistener!=null){
+                if (mylistener!=null){//这里点击时会调用之前在Activity中创建的接口对象，并把值传给他
                     mylistener.onclick(index);
                 }
             }

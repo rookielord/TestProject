@@ -34,13 +34,16 @@ public class AdapterActivity extends Activity {
                 names[i] = "小红" + i;
         }
         MyAdapter adapter=new MyAdapter(this,names);//得到adapter对象，里面有填充的方法
-        adapter.setListener(new MyClickListener() {
+        adapter.setListener(new MyClickListener() {//这里是创建了接口的对象，并赋值给它的方法
             @Override
-            public void onclick(int position) {
+            public void onclick(int position) {//具体接口方法的实现位置，positon的值是在之前那里MyAdapter中将值传过来的
                 Toast.makeText(AdapterActivity.this,"当前位置是"+position+i,Toast.LENGTH_SHORT).show();
             }
         });
         lv.setAdapter(adapter);
+    }
+    public void showContent(int i){
+        Toast.makeText(this,String.valueOf(i),Toast.LENGTH_SHORT).show();
     }
 
 //    class MyAdapter extends BaseAdapter {
