@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/BluetoothChat/BluetoothChat.iml" filepath="$PROJECT_DIR$/BluetoothChat/BluetoothChat.iml" />
       <module fileurl="file://$PROJECT_DIR$/TestProject.iml" filepath="$PROJECT_DIR$/TestProject.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bluetoothtest/bluetoothtest.iml" filepath="$PROJECT_DIR$/bluetoothtest/bluetoothtest.iml" />
       <module fileurl="file://$PROJECT_DIR$/controlthings/controlthings.iml" filepath="$PROJECT_DIR$/controlthings/controlthings.iml" />
       <module fileurl="file://$PROJECT_DIR$/mylist/mylist.iml" filepath="$PROJECT_DIR$/mylist/mylist.iml" />
       <module fileurl="file://$PROJECT_DIR$/qqlayout/qqlayout.iml" filepath="$PROJECT_DIR$/qqlayout/qqlayout.iml" />

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BluetoothTest</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="send_message">发送信息</string>
+</resources>

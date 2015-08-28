@@ -48,6 +48,7 @@ public class BluetoothChat extends Activity {
     private static final boolean D = true;
 
     // Message types sent from the BluetoothChatService Handler
+    //从蓝牙服务那里闯过来的消息类型--消息是从BluetoothChatService那里传过来的
     public static final int MESSAGE_STATE_CHANGE = 1;
     public static final int MESSAGE_READ = 2;
     public static final int MESSAGE_WRITE = 3;
@@ -55,10 +56,12 @@ public class BluetoothChat extends Activity {
     public static final int MESSAGE_TOAST = 5;
 
     // Key names received from the BluetoothChatService Handler
+    //从蓝牙服务那里传过来的关键字
     public static final String DEVICE_NAME = "device_name";
     public static final String TOAST = "toast";
 
     // Intent request codes
+    //请求码
     private static final int REQUEST_CONNECT_DEVICE = 1;
     private static final int REQUEST_ENABLE_BT = 2;
 
