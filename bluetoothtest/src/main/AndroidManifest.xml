@@ -28,5 +28,6 @@
     </application>
     <uses-permission android:name="android.permission.BLUETOOTH"/>
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="ANDROID.PERMISSION.READ_CONTACTS"/>
 
 </manifest>

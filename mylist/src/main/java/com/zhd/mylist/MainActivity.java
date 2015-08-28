@@ -14,10 +14,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends ActionBarActivity implements MyCallback{
 
     private String[] names=new String[20];
-    private static final int NUM=17;
+    private static int NUM=17;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,18 +33,19 @@ public class MainActivity extends ActionBarActivity {
         //实现类传递数据
         MyAdapter adapter=new MyAdapter(this,names);
         //给Adapter类中的接口字段赋值,并传入一个实现了接口的对象
-        adapter.setCallback(new MyCallback() {
-            @Override
-            public void onclick(int position) {
-                Toast.makeText(MainActivity.this, "当前的数字是" + (position + NUM), Toast.LENGTH_SHORT).show();
-            }
-        });
+        adapter.setCallback(this);
+//        adapter.setCallback(new MyCallback() {
+//            @Override
+//            public void onclick(int position) {
+//                Toast.makeText(MainActivity.this, "当前的数字是" + (position + NUM), Toast.LENGTH_SHORT).show();
+//            }
+//        });
         ListView lv= (ListView) findViewById(R.id.lv);
-        GridView gv= (GridView) findViewById(R.id.gv);
-        Spinner sp= (Spinner) findViewById(R.id.sp);
+//        GridView gv= (GridView) findViewById(R.id.gv);
+//        Spinner sp= (Spinner) findViewById(R.id.sp);
         lv.setAdapter(adapter);
-        gv.setAdapter(adapter);
-        sp.setAdapter(adapter);
+//        gv.setAdapter(adapter);
+//        sp.setAdapter(adapter);
 //        lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 //            @Override
 //            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -73,5 +74,10 @@ public class MainActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onclick(int position) {
+        Toast.makeText(MainActivity.this, "当前的数字是" + (position + NUM), Toast.LENGTH_SHORT).show();
     }
 }
