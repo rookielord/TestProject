@@ -10,6 +10,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/BluetoothChat" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/controlthings" />
             <option value="$PROJECT_DIR$/mylist" />
