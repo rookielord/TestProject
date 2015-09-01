@@ -65,9 +65,11 @@ public class DeviceListActivity extends Activity {
         setContentView(R.layout.device_list);
 
         // Set result CANCELED incase the user backs out
+        //用户在没有搜索完成的情况下都算没有完成
         setResult(Activity.RESULT_CANCELED);
 
         // Initialize the button to perform device discovery
+        //开始搜索
         Button scanButton = (Button) findViewById(R.id.button_scan);
         scanButton.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
