@@ -1,1 +1,1 @@
-include ':app', ':qqlayout', ':threadinstance', ':waitnotify', ':controlthings', ':reflector', ':mylist', ':bluetoothtest', 'BluetoothChat'
+include ':app', ':qqlayout', ':threadinstance', ':waitnotify', ':controlthings', ':reflector', ':mylist', ':bluetoothtest', ':HttpConnect', ':SocketConn', 'BluetoothChat'

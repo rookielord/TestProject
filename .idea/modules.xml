@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/BluetoothChat/BluetoothChat.iml" filepath="$PROJECT_DIR$/BluetoothChat/BluetoothChat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HttpConnect/HttpConnect.iml" filepath="$PROJECT_DIR$/HttpConnect/HttpConnect.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SocketConn/SocketConn.iml" filepath="$PROJECT_DIR$/SocketConn/SocketConn.iml" />
       <module fileurl="file://$PROJECT_DIR$/TestProject.iml" filepath="$PROJECT_DIR$/TestProject.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/bluetoothtest/bluetoothtest.iml" filepath="$PROJECT_DIR$/bluetoothtest/bluetoothtest.iml" />
